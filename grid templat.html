@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+      margin: 0 0;
+       box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        
+        display: grid;
+        grid-template-rows: min-content auto min-content;
+        grid-template-areas:
+        "h"
+        "m"
+        "m"
+        "m"
+        "f"
+        ;
+       
+        
+    }
+    header{
+        grid-area: h;
+        width: 100%;
+        text-align: center;
+        background-color: coral;
+    }
+    main{
+        grid-area: m;
+        background: crimson;
+        width: 100%;
+        height: 100%;
+    }
+article{
+    display: grid;
+    grid-template-areas:
+    "s1 a1"
+    "s2 a2"
+    "s3 ."
+    ;
+    height: 100%;
+        }
+section{
+ border: solid;
+   
+    }
+    aside{
+        border: solid;
+        background: cyan;
+    }
+
+footer{
+    background: darkmagenta;
+    grid-area: f;
+    display: grid;
+    grid-template-areas: 
+    "f1 f2"
+    ;
+}
+
+.foot1{grid-area: f1;}
+.foot2{grid-area: f2;}
+
+
+    .sec1{grid-area: s1;}
+    .sec2{grid-area: s2;}
+    .sec3{grid-area: s3;}
+    
+    .asid1{grid-area: a1;}
+    .asid2{grid-area: a2;}
+
+
+    @media screen and (max-width:600px){
+        article{
+            display: grid;
+            grid-template-areas:
+            "s1"
+            "s2"
+            "s3"
+            "a1"
+            "a2"
+
+            ;
+            width: 100%;
+           
+        }
+        footer{
+            display: grid;
+            grid-template-areas:
+            "f1"
+            "f2"
+            ;
+        }
+    }
+
+</style>
+<body>
+    <header>
+        <h1>hello world</h1>
+    </header>
+    <main>
+    <article>
+        <section class="sec1">sec1</section>
+        <section class="sec2">sec2</section>
+        <section class="sec3">sec3</section>
+       
+        <aside class="asid1">asid1</aside>
+        <aside class="asid2">asid2</aside>
+    </article>
+</main>
+    <footer>
+        <section class="foot1">sec1</section>
+        <section class="foot2">sec2</section>
+    </footer>
+</body>
+</html>
