@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+       
+        [class*="col-"]{
+            float: left;
+        }
+
+       *{
+           box-sizing: border-box;
+           padding: 10px 10px;
+
+       }
+       header h1{
+           text-align: center;
+           background: crimson;
+           color: white;
+           padding: 20px 20px;
+       }
+       .nav{
+           background: burlywood;
+           height: 200px;
+
+       }
+       .nav a{
+           text-decoration: none;
+           padding: 10px 10px;
+           display: block;
+       }
+       .main{
+           background: chartreuse;
+       }
+       .aside{
+           background: chocolate;
+       }
+       
+
+       .footer{
+           background: crimson;
+       }
+       .footer{
+           text-align: center;
+           color: white;
+       }
+
+       @media screen and (max-width:992px){
+            [class*="col-"]{
+                width: 100%;
+            }
+       }
+
+</style>
+<body>
+    <header>
+        <h1>well come</h1>
+    </header>
+    <div class="row">
+    <div class="nav col-2">
+        <a href="#">Home</a>
+        <a href="#">about</a>
+        <a href="#">blog</a>
+        <a href="#">search</a>
+    </div>
+    <div class="main col-7">
+        <h1>Well come</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro architecto culpa ullam quibusdam qui, commodi aut laborum natus ipsum odio quod animi blanditiis sapiente impedit beatae soluta voluptates iste labore dolore harum quos! Quo saepe possimus voluptatum alias culpa, fugiat reiciendis ex totam! Pariatur, mollitia et? Vero molestiae nulla illo, sapiente corporis dignissimos sequi nisi vel aut facere saepe quas atque. Corporis amet ipsum, nihil dicta asperiores doloribus minima libero dignissimos. Ratione, totam rerum praesentium excepturi voluptates dolorem sapiente est eius cupiditate vero. Error assumenda fuga quaerat necessitatibus dolorem placeat ipsa inventore tempora voluptatem explicabo reprehenderit pariatur, nostrum ex aliquam!</p>
+
+    </div>
+    <div class="aside col-3">
+        <h1>Hello world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nam vel sunt iure error saepe illo quod reprehenderit sapiente voluptates!</p>
+        <h1>Hello world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nam vel sunt iure error saepe illo quod reprehenderit sapiente voluptates!</p>
+        <h1>Hello world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nam vel sunt iure error saepe illo quod reprehenderit sapiente voluptates!</p>
+        <h1>Hello world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nam vel sunt iure error saepe illo quod reprehenderit sapiente voluptates!</p>
+    </div>
+    <div class="footer">
+        <h1>Hello</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, laudantium.</p>
+        </div>
+</div>
+    
+    
+</body>
+</html>
